@@ -197,6 +197,28 @@
       box-shadow: 0 0 20px #ff4c4c;
     }
 
+    /* New full width video section */
+    .video-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .video-section iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .video-section iframe:hover {
+      box-shadow: 0 0 40px #ff4c4c;
+    }
+
     @media screen and (max-width: 600px) {
       header h1 { font-size: 3rem; }
       header img { width: 300px; }
@@ -213,18 +235,20 @@
 
   <section class="section">
     <h2>Overview</h2>
-    <p>The 2023 Chevrolet Corvette C8 Z06 is a no-compromise American supercar designed to dominate both the track and the streets. With a high-revving naturally aspirated engine, track-honed suspension, and aggressive aerodynamics, it's a vehicle born from racing DNA.</p>
+    <p>The 2023 Chevrolet Corvette C8 Z06 redefines the American supercar, featuring a flat-plane crank 5.5L naturally aspirated V8 engine inspired directly by Corvette Racing's C8.R program. Designed to deliver a track-honed experience on public roads, the Z06 blends performance, precision, and exotic car presence. With a mid-engine layout for balance and a head-turning design, it's built not just to impress — but to dominate.</p>
   </section>
 
   <section class="section">
     <h2>Performance Specs</h2>
     <div class="grid">
-      <div class="spec-card"><h3>Engine</h3><p>5.5L V8 LT6</p></div>
+      <div class="spec-card"><h3>Engine</h3><p>5.5L LT6 V8, flat-plane crank</p></div>
       <div class="spec-card"><h3>Horsepower</h3><p>670 HP @ 8,400 RPM</p></div>
       <div class="spec-card"><h3>Torque</h3><p>460 lb-ft @ 6,300 RPM</p></div>
-      <div class="spec-card"><h3>0-60 mph</h3><p>2.6 Seconds</p></div>
+      <div class="spec-card"><h3>0–60 mph</h3><p>2.6 seconds</p></div>
       <div class="spec-card"><h3>Top Speed</h3><p>195+ mph</p></div>
-      <div class="spec-card"><h3>Transmission</h3><p>8-Speed Dual-Clutch</p></div>
+      <div class="spec-card"><h3>Transmission</h3><p>8-speed dual-clutch automatic</p></div>
+      <div class="spec-card"><h3>Redline</h3><p>8,600 RPM</p></div>
+      <div class="spec-card"><h3>Weight Distribution</h3><p>39% front / 61% rear</p></div>
     </div>
   </section>
 
@@ -240,45 +264,45 @@
         <p>Carbon aero and quad exhaust</p>
       </div>
       <div>
-        <img src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-109-1664801430.jpg" alt="Front angle Z06">
-        <p>Aggressive front stance of the Z06</p>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-109-1664801430.jpg?crop=0.767xw:0.648xh;0.182xw,0.270xh&resize=1200:*" alt="Front angle Z06">
+        <p>Aggressive front stance</p>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2>Watch the Z06 in Action</h2>
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 0 20px rgba(255,0,0,0.5);margin-top:2rem;">
-      <iframe src="https://www.youtube.com/embed/ZZZVu0zYh2k"
-              title="Corvette Z06 Exhaust Sound"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
-      </iframe>
-    </div>
-  </section>
-
-  <section class="section">
     <h2>Design & Aerodynamics</h2>
-    <p>Every curve and vent of the Z06 serves a purpose. The wider body accommodates larger tires and enhanced cooling, while the optional Z07 package adds a carbon rear wing and ground-hugging splitters for maximum downforce and grip.</p>
+    <p>Form meets function with the Z06's aerodynamic bodywork. Wider fenders, front splitter, rear diffuser, and available carbon-fiber rear wing all contribute to downforce and high-speed stability. Cooling ducts, underbody airflow management, and removable front fascia inserts allow for precise track tuning. Every line, vent, and fin exists for a reason — to keep this beast glued to the pavement at speed.</p>
   </section>
 
   <section class="section">
     <h2>Key Features</h2>
     <ul>
-      <li>Optional carbon fiber wheels</li>
-      <li>Magnetic Ride Control 4.0</li>
-      <li>Z07 performance package</li>
-      <li>Quad-center exhaust tips</li>
-      <li>Brembo carbon-ceramic brakes</li>
-      <li>Multiple drive modes</li>
+      <li>Optional carbon-fiber wheels (saving ~41 lbs of unsprung mass)</li>
+      <li>Performance Data Recorder (PDR) with telemetry & lap capture</li>
+      <li>Adjustable traction and performance settings via Drive Mode Selector</li>
+      <li>Brembo® carbon-ceramic brakes (Z07 package)</li>
+      <li>Front lift system with GPS memory</li>
+      <li>Electronic Limited Slip Differential (eLSD)</li>
+      <li>12-inch digital instrument cluster with performance layouts</li>
+      <li>Magnetic Ride Control 4.0 with 1,000+ adjustments per second</li>
     </ul>
   </section>
 
   <section class="section">
     <h2>Race-Proven Technology</h2>
-    <p>The C8 Z06 benefits directly from Corvette Racing’s experience. The flat-plane crank V8 revs to 8,600 rpm, and the track telemetry system allows enthusiasts to analyze every second of lap time.</p>
+    <p>Born from the track, the C8 Z06 was developed alongside the Corvette C8.R endurance race car. Its LT6 engine is hand-built in a clean-room environment, using titanium connecting rods and a lightweight forged crankshaft. With an aggressive intake and dry sump lubrication system, it's made for sustained high-speed track use. Paired with Michelin Pilot Sport Cup 2 R ZP tires in the Z07 package, the Z06 grips like no other street-legal Corvette before it.</p>
+  </section>
+
+  <!-- Video section with full width, consistent styling -->
+  <section class="video-section">
+    <h2>Watch the Z06 in Action</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/wT1DjcS9Xc0?si=AkXrdGvI1Kv-9OlC" 
+      title="YouTube video player" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
   </section>
 
   <footer>
@@ -289,11 +313,9 @@
 
   <script>
     const backToTopBtn = document.getElementById("backToTop");
-
     window.addEventListener("scroll", () => {
       backToTopBtn.style.display = window.pageYOffset > 300 ? "block" : "none";
     });
-
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
