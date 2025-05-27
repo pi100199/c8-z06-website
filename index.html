@@ -17,6 +17,7 @@
       background-color: #0a0a0a;
       color: white;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -103,6 +104,28 @@
         font-size: 2rem;
       }
     }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+      transition: background 0.3s ease;
+    }
+
+    #backToTop:hover {
+      background-color: #cc0000;
+    }
   </style>
 </head>
 <body>
@@ -167,6 +190,28 @@
   <footer>
     <p>© 2025 Corvette Z06 Enthusiasts. Built for performance lovers.</p>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop">⬆ Top</button>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 
 </body>
 </html>
