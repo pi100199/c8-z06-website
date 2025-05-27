@@ -1,48 +1,172 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chevrolet Corvette C8 Z06</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-export default function C8Z06Website() {
-  return (
-    <div className="min-h-screen bg-black text-white font-sans">
-      <header className="p-6 bg-gray-900 shadow-lg">
-        <h1 className="text-3xl font-bold text-red-600">2025 Corvette C8 Z06</h1>
-        <p className="text-gray-300">Track-ready performance meets American muscle</p>
-      </header>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+      line-height: 1.6;
+    }
 
-      <main className="p-6 grid gap-8 md:grid-cols-2 items-center">
-        <img
-          src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/performance/corvette-z06/mov/01-images/2023-corvette-z06-masthead-01.jpg"
-          alt="Corvette C8 Z06"
-          className="rounded-2xl shadow-lg"
-        />
+    header {
+      background: url('https://media.chevrolet.com/dld/content/dam/media/images/us/vehicle/corvette/2023/gallery/2023-corvette-z06-gal-01.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
 
-        <div>
-          <h2 className="text-2xl font-semibold text-red-500 mb-2">About the Z06</h2>
-          <p className="text-gray-300 mb-4">
-            The 2025 Corvette Z06 is a mid-engine masterpiece designed to dominate the track and stun on the street.
-            With its 5.5L flat-plane V8 engine producing 670 horsepower, it rockets from 0 to 60 mph in just 2.6 seconds.
-          </p>
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
 
-          <ul className="list-disc list-inside text-gray-400">
-            <li>670 HP naturally aspirated V8</li>
-            <li>Carbon fiber wheels & aero</li>
-            <li>Race-inspired interior</li>
-            <li>Magnetic Ride Control 4.0</li>
-          </ul>
-        </div>
-      </main>
+    header h1 {
+      z-index: 1;
+      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+    }
 
-      <section className="p-6 bg-gray-800">
-        <h3 className="text-xl text-red-500 mb-2">Gallery</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <img src="https://media.chevrolet.com/content/dam/Media/images/US/Vehicles/Chevrolet/Performance/Corvette/2023/z06/2023-Chevrolet-Corvette-Z06-001.jpg" className="rounded-lg shadow" alt="Z06 Front" />
-          <img src="https://media.chevrolet.com/content/dam/Media/images/US/Vehicles/Chevrolet/Performance/Corvette/2023/z06/2023-Chevrolet-Corvette-Z06-007.jpg" className="rounded-lg shadow" alt="Z06 Rear" />
-          <img src="https://media.chevrolet.com/content/dam/Media/images/US/Vehicles/Chevrolet/Performance/Corvette/2023/z06/2023-Chevrolet-Corvette-Z06-013.jpg" className="rounded-lg shadow" alt="Z06 Interior" />
-        </div>
-      </section>
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-      <footer className="p-4 text-center text-gray-500 bg-gray-900">
-        &copy; 2025 Corvette Enthusiasts | All rights reserved.
-      </footer>
+    .section h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ff0000;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .spec-card {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    }
+
+    .spec-card h3 {
+      color: #ff4c4c;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .spec-card p {
+      font-size: 1.1rem;
+    }
+
+    .infographic {
+      background-color: #111;
+      text-align: center;
+    }
+
+    .infographic img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-top: 2rem;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    }
+
+    footer {
+      background: #0a0a0a;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chevrolet Corvette C8 Z06</h1>
+  </header>
+
+  <section class="section">
+    <h2>Overview</h2>
+    <p>The 2023 Chevrolet Corvette C8 Z06 is a track-focused supercar that delivers raw American power with a precision-engineered mid-engine layout. Featuring a naturally aspirated flat-plane crank V8, it's designed to take on European exotics with style, performance, and value.</p>
+  </section>
+
+  <section class="section">
+    <h2>Performance Specs</h2>
+    <div class="grid">
+      <div class="spec-card">
+        <h3>Engine</h3>
+        <p>5.5L V8 LT6 (Flat-plane crank)</p>
+      </div>
+      <div class="spec-card">
+        <h3>Horsepower</h3>
+        <p>670 HP @ 8,400 RPM</p>
+      </div>
+      <div class="spec-card">
+        <h3>Torque</h3>
+        <p>460 lb-ft @ 6,300 RPM</p>
+      </div>
+      <div class="spec-card">
+        <h3>0-60 mph</h3>
+        <p>2.6 Seconds</p>
+      </div>
+      <div class="spec-card">
+        <h3>Top Speed</h3>
+        <p>195+ mph</p>
+      </div>
+      <div class="spec-card">
+        <h3>Transmission</h3>
+        <p>8-Speed Dual-Clutch</p>
+      </div>
     </div>
-  );
-}
+  </section>
+
+  <section class="section infographic">
+    <h2>Infographic Highlights</h2>
+    <img src="https://www.motortrend.com/uploads/2022/11/2023-Chevrolet-Corvette-Z06-cutaway-engine.jpg" alt="Corvette Z06 Infographic">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-101-1635449642.jpg" alt="Z06 Track Shot">
+  </section>
+
+  <section class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Carbon fiber wheels (optional)</li>
+      <li>Magnetic Ride Control 4.0</li>
+      <li>Available Z07 performance package</li>
+      <li>Lightweight forged aluminum wheels</li>
+      <li>Quad-center exhaust tips</li>
+      <li>Front and rear Brembo brakes</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Corvette Z06 Enthusiasts. Built for performance lovers.</p>
+  </footer>
+
+</body>
+</html>
