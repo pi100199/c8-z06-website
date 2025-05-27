@@ -12,12 +12,15 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
       background-color: #0a0a0a;
       color: white;
       line-height: 1.6;
-      scroll-behavior: smooth;
     }
 
     header {
@@ -54,6 +57,11 @@
       font-family: 'Orbitron', sans-serif;
       color: #ff0000;
       margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .section p, li {
+      font-size: 1.1rem;
     }
 
     .grid {
@@ -74,10 +82,6 @@
       font-family: 'Orbitron', sans-serif;
     }
 
-    .spec-card p {
-      font-size: 1.1rem;
-    }
-
     .infographic {
       background-color: #111;
       text-align: center;
@@ -90,6 +94,11 @@
       box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
     }
 
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+
     footer {
       background: #0a0a0a;
       text-align: center;
@@ -99,118 +108,100 @@
       border-top: 1px solid #222;
     }
 
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #ff0000;
+      color: white;
+      padding: 0.7rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+    }
+
     @media screen and (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
     }
-
-    /* Back to Top Button */
-    #backToTop {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      display: none;
-      background-color: #ff0000;
-      color: white;
-      border: none;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      z-index: 1000;
-      box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
-      transition: background 0.3s ease;
-    }
-
-    #backToTop:hover {
-      background-color: #cc0000;
-    }
   </style>
 </head>
 <body>
 
-  <header>
+  <header id="top">
     <h1>Chevrolet Corvette C8 Z06</h1>
   </header>
 
   <section class="section">
     <h2>Overview</h2>
-    <p>The 2023 Chevrolet Corvette C8 Z06 is a track-focused supercar that delivers raw American power with a precision-engineered mid-engine layout. Featuring a naturally aspirated flat-plane crank V8, it's designed to take on European exotics with style, performance, and value.</p>
+    <p>The 2023 Chevrolet Corvette C8 Z06 is a no-compromise American supercar. Built to rival the best from Europe, it features a mid-engine platform, track-honed chassis, and an all-new 5.5L flat-plane crank V8 that screams to 8,600 RPM. This is not just a faster Corvette—this is a revolutionary statement of performance, design, and racing pedigree.</p>
   </section>
 
   <section class="section">
     <h2>Performance Specs</h2>
     <div class="grid">
-      <div class="spec-card">
-        <h3>Engine</h3>
-        <p>5.5L V8 LT6 (Flat-plane crank)</p>
-      </div>
-      <div class="spec-card">
-        <h3>Horsepower</h3>
-        <p>670 HP @ 8,400 RPM</p>
-      </div>
-      <div class="spec-card">
-        <h3>Torque</h3>
-        <p>460 lb-ft @ 6,300 RPM</p>
-      </div>
-      <div class="spec-card">
-        <h3>0-60 mph</h3>
-        <p>2.6 Seconds</p>
-      </div>
-      <div class="spec-card">
-        <h3>Top Speed</h3>
-        <p>195+ mph</p>
-      </div>
-      <div class="spec-card">
-        <h3>Transmission</h3>
-        <p>8-Speed Dual-Clutch</p>
-      </div>
+      <div class="spec-card"><h3>Engine</h3><p>5.5L V8 LT6 (Flat-plane crank)</p></div>
+      <div class="spec-card"><h3>Horsepower</h3><p>670 HP @ 8,400 RPM</p></div>
+      <div class="spec-card"><h3>Torque</h3><p>460 lb-ft @ 6,300 RPM</p></div>
+      <div class="spec-card"><h3>0-60 mph</h3><p>2.6 Seconds</p></div>
+      <div class="spec-card"><h3>Top Speed</h3><p>195+ mph</p></div>
+      <div class="spec-card"><h3>Transmission</h3><p>8-Speed Dual-Clutch</p></div>
     </div>
   </section>
 
   <section class="section infographic">
     <h2>Infographic Highlights</h2>
-    <img src="https://www.motortrend.com/uploads/2022/11/2023-Chevrolet-Corvette-Z06-cutaway-engine.jpg" alt="Corvette Z06 Infographic">
-    <img src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-101-1635449642.jpg" alt="Z06 Track Shot">
+    <img src="https://www.motortrend.com/uploads/2022/11/2023-Chevrolet-Corvette-Z06-cutaway-engine.jpg" alt="Corvette Z06 Engine">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-101-1635449642.jpg" alt="Track Ready Z06">
+  </section>
+
+  <section class="section">
+    <h2>Design & Aerodynamics</h2>
+    <p>Every curve and vent of the Z06 serves a purpose. Its aggressive front splitter, rear wing, and side vents are not just for show—they provide aerodynamic efficiency and cooling for the brakes and engine. The optional Z07 Performance Package enhances downforce with a carbon fiber aero kit for better lap times.</p>
   </section>
 
   <section class="section">
     <h2>Key Features</h2>
     <ul>
-      <li>Carbon fiber wheels (optional)</li>
-      <li>Magnetic Ride Control 4.0</li>
-      <li>Available Z07 performance package</li>
-      <li>Lightweight forged aluminum wheels</li>
-      <li>Quad-center exhaust tips</li>
-      <li>Front and rear Brembo brakes</li>
+      <li>Optional carbon fiber wheels (ultra-lightweight)</li>
+      <li>Magnetic Ride Control 4.0 adaptive suspension</li>
+      <li>Available Z07 performance package with upgraded aero and Michelin Cup 2 R tires</li>
+      <li>Quad-center exhaust tips for unique sound profile</li>
+      <li>14.6” front and 15” rear Brembo carbon-ceramic brakes (Z07)</li>
+      <li>Multiple drive modes including Weather, Tour, Sport, Track, and MyMode</li>
     </ul>
+  </section>
+
+  <section class="section">
+    <h2>Race-Proven Technology</h2>
+    <p>The C8 Z06 benefits directly from Corvette Racing’s experience. The LT6 engine is based on the same architecture used in the C8.R race car. With a dry sump oil system, forged internals, titanium intake valves, and a lightning-fast dual-clutch gearbox, the Z06 is built to perform on the street and dominate on track.</p>
   </section>
 
   <footer>
     <p>© 2025 Corvette Z06 Enthusiasts. Built for performance lovers.</p>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button id="backToTop">⬆ Top</button>
+  <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
 
   <script>
-    const backToTop = document.getElementById("backToTop");
+    const backToTopBtn = document.getElementById("backToTop");
 
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        backToTop.style.display = "block";
+      if (window.pageYOffset > 300) {
+        backToTopBtn.style.display = "block";
       } else {
-        backToTop.style.display = "none";
+        backToTopBtn.style.display = "none";
       }
     });
 
-    backToTop.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   </script>
 
 </body>
