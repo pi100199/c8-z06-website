@@ -1,0 +1,48 @@
+import React from "react";
+
+export default function C8Z06Website() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans">
+      <header className="p-6 bg-gray-900 shadow-lg">
+        <h1 className="text-3xl font-bold text-red-600">2025 Corvette C8 Z06</h1>
+        <p className="text-gray-300">Track-ready performance meets American muscle</p>
+      </header>
+
+      <main className="p-6 grid gap-8 md:grid-cols-2 items-center">
+        <img
+          src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2023/performance/corvette-z06/mov/01-images/2023-corvette-z06-masthead-01.jpg"
+          alt="Corvette C8 Z06"
+          className="rounded-2xl shadow-lg"
+        />
+
+        <div>
+          <h2 className="text-2xl font-semibold text-red-500 mb-2">About the Z06</h2>
+          <p className="text-gray-300 mb-4">
+            The 2025 Corvette Z06 is a mid-engine masterpiece designed to dominate the track and stun on the street.
+            With its 5.5L flat-plane V8 engine producing 670 horsepower, it rockets from 0 to 60 mph in just 2.6 seconds.
+          </p>
+
+          <ul className="list-disc list-inside text-gray-400">
+            <li>670 HP naturally aspirated V8</li>
+            <li>Carbon fiber wheels & aero</li>
+            <li>Race-inspired interior</li>
+            <li>Magnetic Ride Control 4.0</li>
+          </ul>
+        </div>
+      </main>
+
+      <section className="p-6 bg-gray-800">
+        <h3 className="text-xl text-red-500 mb-2">Gallery</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <img src="https://media.chevrolet.com/content/dam/Media/images/US/Vehicles/Chevrolet/Performance/Corvette/2023/z06/2023-Chevrolet-Corvette-Z06-001.jpg" className="rounded-lg shadow" alt="Z06 Front" />
+          <img src="https://media.chevrolet.com/content/dam/Media/images/US/Vehicles/Chevrolet/Performance/Corvette/2023/z06/2023-Chevrolet-Corvette-Z06-007.jpg" className="rounded-lg shadow" alt="Z06 Rear" />
+          <img src="https://media.chevrolet.com/content/dam/Media/images/US/Vehicles/Chevrolet/Performance/Corvette/2023/z06/2023-Chevrolet-Corvette-Z06-013.jpg" className="rounded-lg shadow" alt="Z06 Interior" />
+        </div>
+      </section>
+
+      <footer className="p-4 text-center text-gray-500 bg-gray-900">
+        &copy; 2025 Corvette Enthusiasts | All rights reserved.
+      </footer>
+    </div>
+  );
+}
