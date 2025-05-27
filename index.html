@@ -146,12 +146,6 @@
       box-shadow: 0 0 40px #ff0000;
     }
 
-    .infographic p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-      color: #ccc;
-    }
-
     ul {
       margin-top: 1rem;
       padding-left: 1.5rem;
@@ -197,11 +191,50 @@
       box-shadow: 0 0 20px #ff4c4c;
     }
 
+    /* Comparison table styles */
+    .table-container {
+      overflow-x: auto;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+      font-size: 1.1rem;
+      color: #eee;
+      text-align: center;
+    }
+
+    thead {
+      background: #ff0000;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      box-shadow: 0 0 15px #ff4c4c;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #440000;
+    }
+
+    tbody tr:hover {
+      background-color: rgba(255, 76, 76, 0.15);
+      cursor: default;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Responsive tweaks */
     @media screen and (max-width: 600px) {
       header h1 { font-size: 3rem; }
       header img { width: 300px; }
       .section h2 { font-size: 1.8rem; }
     }
+
   </style>
 </head>
 <body>
@@ -227,7 +260,7 @@
       <div class="spec-card"><h3>Transmission</h3><p>8-speed dual-clutch automatic</p></div>
       <div class="spec-card"><h3>Redline</h3><p>8,600 RPM</p></div>
       <div class="spec-card"><h3>Weight Distribution</h3><p>39% front / 61% rear</p></div>
-      <div class="spec-card"><h3>Brake Distance</h3><p>98 ft (60-0 mph)</p></div>
+      <div class="spec-card"><h3>Brake Distance (60-0 mph)</h3><p>Approximately 102 feet</p></div>
     </div>
   </section>
 
@@ -250,50 +283,128 @@
   </section>
 
   <section class="section">
-    <h2>Design & Aerodynamics</h2>
-    <p>Form meets function with the Z06's aerodynamic bodywork. Wider fenders, front splitter, rear diffuser, and available carbon-fiber rear wing all contribute to downforce and high-speed stability. Cooling ducts, underbody airflow management, and removable front fascia inserts allow for precise track tuning. Every line, vent, and fin exists for a reason — to keep this beast glued to the pavement at speed.</p>
+    <h2>Video Showcase</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;background:#000;border-radius:15px;box-shadow:0 0 25px #ff0000;">
+      <iframe
+        src="https://www.youtube.com/embed/g1dA9bq0fRA"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="Corvette C8 Z06 Video"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:15px;"
+      ></iframe>
+    </div>
   </section>
 
   <section class="section">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Optional carbon-fiber wheels (saving ~41 lbs of unsprung mass)</li>
-      <li>Performance Data Recorder (PDR) with telemetry & lap capture</li>
-      <li>Adjustable traction and performance settings via Drive Mode Selector</li>
-      <li>Brembo® carbon-ceramic brakes (Z07 package)</li>
-      <li>Front lift system with GPS memory</li>
-      <li>Electronic Limited Slip Differential (eLSD)</li>
-      <li>12-inch digital instrument cluster with performance layouts</li>
-      <li>Magnetic Ride Control 4.0 with 1,000+ adjustments per second</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Race-Proven Technology</h2>
-    <p>Born from the track, the C8 Z06 was developed alongside the Corvette C8.R endurance race car. Its LT6 engine is hand-built in a clean-room environment, using titanium connecting rods and a lightweight forged crankshaft. With an aggressive intake and dry sump lubrication system, it's made for sustained high-speed track use. Paired with Michelin Pilot Sport Cup 2 R ZP tires in the Z07 package, the Z06 grips like no other street-legal Corvette before it.</p>
-  </section>
-
-  <section class="section">
-    <h2>Video Walkaround</h2>
-    <div style="text-align:center; margin-top: 1rem;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/wT1DjcS9Xc0?si=AkXrdGvI1Kv-9OlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Performance Comparison With Other Supercars</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>0-60 mph (sec)</th>
+            <th>Top Speed (mph)</th>
+            <th>Horsepower</th>
+            <th>Approx. Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chevrolet Corvette C8 Z06</td>
+            <td>2.6</td>
+            <td>195+</td>
+            <td>670</td>
+            <td>$105,300</td>
+          </tr>
+          <tr>
+            <td>Ferrari F8 Tributo</td>
+            <td>2.9</td>
+            <td>211</td>
+            <td>710</td>
+            <td>$280,000</td>
+          </tr>
+          <tr>
+            <td>Lamborghini Huracán EVO</td>
+            <td>2.9</td>
+            <td>202</td>
+            <td>631</td>
+            <td>$261,000</td>
+          </tr>
+          <tr>
+            <td>Porsche 911 Turbo S (992)</td>
+            <td>2.6</td>
+            <td>205</td>
+            <td>640</td>
+            <td>$204,000</td>
+          </tr>
+          <tr>
+            <td>McLaren 720S</td>
+            <td>2.7</td>
+            <td>212</td>
+            <td>710</td>
+            <td>$315,000</td>
+          </tr>
+          <tr>
+            <td>Audi R8 V10 Performance</td>
+            <td>3.3</td>
+            <td>205</td>
+            <td>602</td>
+            <td>$142,700</td>
+          </tr>
+          <tr>
+            <td>Nissan GT-R Nismo</td>
+            <td>2.9</td>
+            <td>196</td>
+            <td>600</td>
+            <td>$210,740</td>
+          </tr>
+          <tr>
+            <td>Dodge Viper ACR</td>
+            <td>3.4</td>
+            <td>177</td>
+            <td>645</td>
+            <td>$120,000</td>
+          </tr>
+          <tr>
+            <td>Aston Martin Vantage V8</td>
+            <td>3.6</td>
+            <td>195</td>
+            <td>503</td>
+            <td>$142,000</td>
+          </tr>
+          <tr>
+            <td>Mercedes-AMG GT R Pro</td>
+            <td>3.5</td>
+            <td>198</td>
+            <td>577</td>
+            <td>$163,000</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Corvette Z06 Enthusiasts. Built for performance lovers.</p>
+    &copy; 2025 Chevrolet Corvette C8 Z06 Fan Site. All rights reserved.
   </footer>
 
-  <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+  <button id="backToTop" title="Back to Top">TOP</button>
 
   <script>
-    const backToTopBtn = document.getElementById("backToTop");
-    window.addEventListener("scroll", () => {
-      backToTopBtn.style.display = window.pageYOffset > 300 ? "block" : "none";
+    // Show back to top button on scroll
+    const backToTopButton = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
     });
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
   </script>
 
 </body>
